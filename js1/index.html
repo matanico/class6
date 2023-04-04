@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id=trial>
+    <button onclick="test()" style="background-color: blue; color: white;">Click</button>
+    <input id=trial2>
+    <button onclick="test2()">click2</button>
+    <input id=trial3>
+    <button onclick="test3()">click3</button>
+    <input id=trial4>
+    <button onclick="test4()">click4</button> <br><br>
+    username:
+    <input id=trial5>
+    <button onclick="test5()">click5</button><br><br>
+    password:
+    <input id=trial6>
+    <button onclick="test6()">click6</button>
+
+
+    <script>
+
+        id= "paste"
+
+        function test() {
+
+            console.log(trial.value);
+        }
+        function test2() {
+            document.getElementById("trial2").value = "";
+        }
+        function test3() {
+            console.log(trial3.value.length);
+        }
+
+        function test4() {
+            if (trial4.value.length > 3 && trial4.value.length < 9) {
+                console.log("correct");
+
+
+            } else {
+                console.log("not good");
+            }
+        }
+        function test5() {
+
+            if (trial5.value.length > 4 && trial5.value.length < 11) {
+                paste.inn = "correct";
+
+
+            } else {
+                console.log("not good");
+            }
+        }
+        function test6() {
+            if (trial6.value === "123") {
+                console.log("perfect");
+            } else {
+                console.log("srry but no");
+            }
+
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>
